@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'articles API', type: :request do
 # initialize test data 
+# bang version allows the resource to be available almost immediately
   let!(:articles) { create_list(:article, 10) }
   let(:article_id) { articles.first.id }
 
